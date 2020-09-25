@@ -12,13 +12,13 @@ module.exports = {
     'no-cond-assign': 2,
     'no-constant-condition': [1, {checkLoops: false}],
     'no-control-regex': 1,
-    'debugger': 2,
+    'no-debugger': 2,
     'no-dupe-args': 2,
     'no-dupe-else-if': 2,
     'no-dupe-keys': 2,
     'no-duplicate-case': 2,
     'no-empty': [1, {allowEmptyCatch: true}],
-    'no-empty-character-classs': 2,
+    'no-empty-character-class': 2,
     'no-ex-assign': 2,
     'no-extra-boolean-cast': 2,
     '@typescript-eslint/no-extra-parens': [1, 'all', {
@@ -49,7 +49,7 @@ module.exports = {
     'no-unsafe-finally': 2,
     'no-unsafe-negation': [2, {enforceForOrderingRelations: true}],
     'no-useless-backreference': 1,
-    'require-atomic-updates': 1,
+    'require-atomic-updates': 0,
     'use-isnan': 2,
     'valid-typeof': 2,
 
@@ -233,7 +233,9 @@ module.exports = {
     'sort-keys': 0,
     'sort-vars': 0,
     'space-before-blocks': 1,
-    '@typescript-eslint/space-before-function-paren': [1, 'never'],
+    '@typescript-eslint/space-before-function-paren': [1, {
+      asyncArrow: 'always'
+    }],
     'space-in-parens': 1,
     'space-infix-ops': 1,
     'space-unary-ops': 1,
