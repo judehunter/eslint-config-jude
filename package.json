@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jude",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "https://github.com/judehunter/eslint-config-jude",
   "author": "judehunter <matisowagm@gmail.com>",
