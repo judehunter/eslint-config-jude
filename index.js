@@ -149,7 +149,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 2,
 
     //--- Stylistic Issues
-    'array-bracket-newline': [1, {multiline: true}],
+    'array-bracket-newline': 0,
     'array-bracket-spacing': [1, 'never'],
     'array-element-newline': 0,
     'block-spacing': 1,
@@ -219,7 +219,7 @@ module.exports = {
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 1,
     'nonblock-statement-body-position': 0,
-    'object-curly-newline': [1, {multiline: true}],
+    'object-curly-newline': 0,
     'object-curly-spacing': 1,
     'object-property-newline': 0,
     'one-var': 0,
