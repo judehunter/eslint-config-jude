@@ -17,13 +17,13 @@ module.exports = {
     'no-dupe-keys': 2,
     'no-duplicate-case': 2,
     'no-empty': [1, {allowEmptyCatch: true}],
-    'no-empty-character-class': 2,
+    'no-empty-character-classs': 2,
     'no-ex-assign': 2,
     'no-extra-boolean-cast': 2,
     '@typescript-eslint/no-extra-parens': [1, 'all', {
       conditionalAssign: false,
       returnAssign: false,
-      enforeForArrowConditionals: false,
+      enforceForArrowConditionals: false,
       enforceForNewInMemberExpressions: false,
       enforceForFunctionPrototypeMethods: false
     }],
