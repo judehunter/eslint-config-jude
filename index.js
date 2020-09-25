@@ -151,7 +151,7 @@ module.exports = {
     //--- Stylistic Issues
     'array-bracket-newline': [1, {multiline: true}],
     'array-bracket-spacing': [1, 'never'],
-    'array-element-newline': [1, {multiline: true}],
+    'array-element-newline': 0,
     'block-spacing': 1,
     '@typescript-eslint/brace-style': 1,
     'camelcase': 1,
@@ -181,7 +181,12 @@ module.exports = {
     'lines-around-comment': 0,
     '@typescript-eslint/lines-between-class-members': 1,
     'max-depth': 0,
-    'max-len': [1, {code: 100}],
+    'max-len': [1, {
+      code: 110,
+      ignoreTemplateLiterals: true,
+      ignorePattern: '^import\\s.+\\sfrom\\s.+;$',
+      'ignoreUrls': true
+    }],
     'max-lines': 0,
     'max-lines-per-function': 0,
     'max-nested-callbacks': 0,
@@ -239,7 +244,9 @@ module.exports = {
     'space-in-parens': 1,
     'space-infix-ops': 1,
     'space-unary-ops': 1,
-    'spaced-comment': 1,
+    'spaced-comment': [1, 'always', {
+      markers: ['#region', '#endregion']
+    }],
     'switch-colon-spacing': 1,
     'template-tag-spacing': 1,
     'unicode-bom': 0,
@@ -294,7 +301,16 @@ module.exports = {
       'explicit-function-return-type': 0,
       'explicit-function-return-type': 0,
       'explicit-module-boundary-types': 0,
-      'member-delimiter-style': 1,
+      'member-delimiter-style': [1, {
+        multiline: {
+          delimiter: 'comma',
+          requireLast: true
+        },
+        singleline: {
+          delimiter: 'comma',
+          requireLast: false
+        }
+      }],
       'member-ordering': 0,
       'method-signature-style': 0,
       'naming-convention': 0,
@@ -305,7 +321,7 @@ module.exports = {
       'no-explicit-any': [2, {ignoreRestArgs: false, fixToUnknown: true}],
       'no-extra-non-null-assertion': 2,
       'no-extraneous-class': 1,
-      'no-floating-promises': 2,
+      'no-floating-promises': 0,
       'no-for-in-array': 2,
       'no-implicit-any-catch': 0,
       'no-implied-eval': 2,
